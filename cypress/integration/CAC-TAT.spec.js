@@ -69,4 +69,17 @@ describe('Central de Atendimento ao Cliente TAT', function() {
 
         cy.get('.error').should('be.visible')
     })
+
+    it('envia o formulário com sucesso usando um comando customizado', function() {
+        const form = {
+           firstName: 'Nome',
+           lastName: 'Sobrenome',
+           email: 'nome@email.com',
+           duvida: 'Eu tenho uma dúvida'
+        }
+
+        cy.fillMandatoryFieldsAndSubmit(form)
+
+        cy.get('.success').should('be.visible')
+    })
 })
