@@ -32,5 +32,5 @@ Cypress.Commands.add('fillMandatoryFieldsAndSubmit', (form) => {
         .type(form.duvida, {delay: 0})
         .should('have.value', form.duvida)
 
-    cy.get('button[type="submit"]').click()
+    cy.contains('button', 'Enviar').click()
 })
