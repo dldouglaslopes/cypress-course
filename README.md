@@ -24,7 +24,7 @@ Or, run `npm run cy:open` to open Cypress in interactive mode on a desktop viewp
 
 You can run the teste simulating a desktop or mobile viewport
 
-Run `npm run test:mobile` (or `npm t` for the short version) to run the test in headless mode on a desktop viewport.
+Run `npm run test:mobile` to run the test in headless mode on a desktop viewport.
 
 Or, run `npm run cy:open:mobile` to open Cypress in interactive mode on a desktop viewport.
 
