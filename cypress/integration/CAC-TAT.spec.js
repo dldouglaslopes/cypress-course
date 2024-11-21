@@ -214,4 +214,9 @@ describe('Central de Atendimento ao Cliente TAT', function() {
             expect(body).to.include('CAC TAT')
         })
     })
+
+    it('procura um emoji de gato', function() {
+        cy.contains('span', '🐈').should('exist')
+        cy.get('#cat').invoke('show').should('be.visible')
+    })
 })
